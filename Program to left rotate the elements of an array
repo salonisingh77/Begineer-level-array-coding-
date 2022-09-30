@@ -1,0 +1,23 @@
+
+import java.util.*;
+public class Main
+{
+    static void rot(int arr[])
+{
+    int temp=arr[0];
+    for(int i=0;i<arr.length-1;i++)
+    {
+        arr[i]=arr[i+1];
+    }
+    arr[arr.length-1]=temp;
+}
+int [] arr = new int [] {1, 2, 3, 4, 5}; 
+	   int r=7;
+	   for(int i=0;i<r;i++)
+	   {
+	       rot(arr);
+	   }
+	   for(int j:arr)
+	   System.out.println(j);
+}}
+//we are calling rot function each time till how much postion we want our array to be rotated
