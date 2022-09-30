@@ -1,0 +1,20 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+
+		  int [] arr = new int [] {1, 2, 8, 3, 2, 2, 2, 5, 1};
+		 Arrays.sort(arr);//sort the array
+		 int count=1;//element will have appear atleast once
+		 for(int i=0;i<arr.length-1;i++)
+		 {
+		     while(arr[i]==arr[i+1] )
+		     {
+		         count++;
+		         i++;
+		     }
+		     System.out.println("Frequency of"+arr[i]+" = "+count);
+		     count=1;
+		 }
+	}
+}
